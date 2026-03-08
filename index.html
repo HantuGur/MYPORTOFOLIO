@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>@cincau_item1 — Web Designer & Developer</title>
+  <meta name="description" content="Portfolio web designer & developer. Spesialis landing page untuk bisnis lokal Indonesia."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-name">cincau_item1</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/6282113478296?text=Halo!%20Saya%20tertarik%20untuk%20diskusi%20project%20web." target="_blank" class="nav-hire">Hire Me</a>
+    <button class="hamburger" id="ham" onclick="toggleMob()">
+      <span id="h1"></span><span id="h2"></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mob">
+    <a href="#about"   onclick="closeMob()">About</a>
+    <a href="#work"    onclick="closeMob()">Work</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+    <a href="https://wa.me/6282113478296" target="_blank" class="mob-hire" onclick="closeMob()">Hire Me →</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <!-- Profile Photo Placeholder -->
+      <div class="profile-wrap">
+        <div class="profile-ring"></div>
+        <div class="profile-img">
+          <img src="photo.jpg" alt="cincau_item1" style="object-position: top center;"/>
+        </div>
+        <div class="profile-badge">
+          <span class="pb-dot"></span>
+          Available
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-tag">
+        <span class="mono">01 /</span> Web Designer & Developer
+      </div>
+      <h1 class="hero-h1">
+        <span class="l1">Bikin Website</span>
+        <span class="l2">yang Bikin <em>Orang</em></span>
+        <span class="l3">Berhenti Scroll.</span>
+      </h1>
+      <p class="hero-p">Spesialis landing page & company profile untuk bisnis lokal Indonesia — dari cafe, sekolah, gym, sampai resto. Clean, fast, & works.</p>
+      <div class="hero-meta">
+        <div class="hm"><span class="mono">7+</span><small>Projects</small></div>
+        <div class="hm-sep"></div>
+        <div class="hm"><span class="mono">100%</span><small>Custom Code</small></div>
+        <div class="hm-sep"></div>
+        <div class="hm"><span class="mono">IDN</span><small>Based</small></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">Lihat Portfolio</a>
+        <a href="https://wa.me/6282113478296?text=Halo!%20Saya%20mau%20tanya%20soal%20pembuatan%20website." target="_blank" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating scroll -->
+    <div class="hero-scroll">
+      <div class="scroll-wheel"></div>
+      <span class="mono">scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Landing Page</span><span class="mx">✶</span>
+      <span>Company Profile</span><span class="mx">✶</span>
+      <span>Cafe & Resto</span><span class="mx">✶</span>
+      <span>Education</span><span class="mx">✶</span>
+      <span>Gym & Fitness</span><span class="mx">✶</span>
+      <span>HTML · CSS · JS</span><span class="mx">✶</span>
+      <span>Custom Code</span><span class="mx">✶</span>
+      <span>Bisnis Lokal Indonesia</span><span class="mx">✶</span>
+      <span>Landing Page</span><span class="mx">✶</span>
+      <span>Company Profile</span><span class="mx">✶</span>
+      <span>Cafe & Resto</span><span class="mx">✶</span>
+      <span>Education</span><span class="mx">✶</span>
+      <span>Gym & Fitness</span><span class="mx">✶</span>
+      <span>HTML · CSS · JS</span><span class="mx">✶</span>
+      <span>Custom Code</span><span class="mx">✶</span>
+      <span>Bisnis Lokal Indonesia</span><span class="mx">✶</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-left">
+        <p class="section-num mono">02 /</p>
+        <h2 class="section-h2">Tentang <em>Gue</em></h2>
+        <p class="about-p">Gue bikin website untuk bisnis lokal Indonesia yang mau tampil serius di dunia digital — tanpa harus bayar mahal, tanpa template generik, tanpa ribet.</p>
+        <p class="about-p">Setiap project dibuat dari nol, disesuaikan dengan brand dan vibes bisnis kamu. Mulai dari cafe yang cozy, sekolah yang trustworthy, sampai gym yang energik.</p>
+        <div class="skills-wrap">
+          <div class="skill-item"><span class="mono">01</span> HTML & CSS</div>
+          <div class="skill-item"><span class="mono">02</span> JavaScript</div>
+          <div class="skill-item"><span class="mono">03</span> Responsive Design</div>
+          <div class="skill-item"><span class="mono">04</span> UI / UX Design</div>
+          <div class="skill-item"><span class="mono">05</span> Brand Identity</div>
+          <div class="skill-item"><span class="mono">06</span> Landing Page</div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-card">
+          <div class="ac-head">
+            <div class="ac-avatar">
+              <img src="photo.jpg" alt="cincau_item1" style="object-position: top center;"/>
+            </div>
+            <div>
+              <div class="ac-name">@cincau_item1</div>
+              <div class="ac-role">Web Designer · Developer</div>
+            </div>
+          </div>
+          <div class="ac-divider"></div>
+          <div class="ac-stats">
+            <div class="acs"><span>7+</span><small>Projects</small></div>
+            <div class="acs"><span>∞</span><small>Kopi diminum</small></div>
+            <div class="acs"><span>IDN</span><small>Location</small></div>
+          </div>
+          <div class="ac-divider"></div>
+          <div class="ac-links">
+            <a href="https://instagram.com/cincau_item1" target="_blank" class="acl">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              @cincau_item1
+            </a>
+            <a href="https://wa.me/6282113478296" target="_blank" class="acl">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              082113478296
+            </a>
+          </div>
+        </div>
+
+        <!-- Decorative code block -->
+        <div class="code-block">
+          <div class="cb-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="ct">const</span> <span class="cv">dev</span> = {
+  <span class="ck">name</span>: <span class="cs">"cincau_item1"</span>,
+  <span class="ck">stack</span>: [<span class="cs">"HTML"</span>, <span class="cs">"CSS"</span>, <span class="cs">"JS"</span>],
+  <span class="ck">focus</span>: <span class="cs">"local business"</span>,
+  <span class="ck">available</span>: <span class="cb2">true</span> ✓
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="work-header">
+      <div class="wh-left">
+        <p class="section-num mono">03 /</p>
+        <h2 class="section-h2">Selected <em>Work</em></h2>
+      </div>
+      <p class="wh-sub">7 projects · semua custom code · berbagai industri</p>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- Project 1 -->
+      <article class="pj" data-index="01">
+        <a href="https://hantugur.github.io/dianbangsa/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/dianbangsa/" loading="lazy" title="Dian Bangsa School" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">01</span>
+              <div class="pj-tags">
+                <span>Education</span>
+                <span>Company Profile</span>
+              </div>
+            </div>
+            <h3 class="pj-title">Dian Bangsa School</h3>
+            <p class="pj-desc">Website sekolah multi-jenjang KB–SMA di Tangerang. Clean, trust-worthy, full PPDB info.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="pj" data-index="02">
+        <a href="https://hantugur.github.io/c-code-coffe/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/c-code-coffe/" loading="lazy" title="C-Code Coffee" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">02</span>
+              <div class="pj-tags">
+                <span>Cafe</span>
+                <span>Landing Page</span>
+              </div>
+            </div>
+            <h3 class="pj-title">C-Code Coffee</h3>
+            <p class="pj-desc">Landing page coffee shop dengan vibes modern developer. Dark theme, interactive menu.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="pj" data-index="03">
+        <a href="https://hantugur.github.io/lucky-cat-coffe/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/lucky-cat-coffe/" loading="lazy" title="Lucky Cat Coffee" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">03</span>
+              <div class="pj-tags">
+                <span>Cafe</span>
+                <span>Landing Page</span>
+              </div>
+            </div>
+            <h3 class="pj-title">Lucky Cat Coffee</h3>
+            <p class="pj-desc">Coffee shop landing page dengan estetika Jepang playful. Warm tones, full menu section.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="pj" data-index="04">
+        <a href="https://hantugur.github.io/scarlet-cake/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/scarlet-cake/" loading="lazy" title="Scarlet Cake" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">04</span>
+              <div class="pj-tags">
+                <span>Bakery</span>
+                <span>Landing Page</span>
+              </div>
+            </div>
+            <h3 class="pj-title">Scarlet Cake</h3>
+            <p class="pj-desc">Landing page toko kue artisan dengan tampilan premium dan elegan. Feminine, clean.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="pj" data-index="05">
+        <a href="https://hantugur.github.io/JonkiraRamen/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/JonkiraRamen/" loading="lazy" title="Jonkira Ramen" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">05</span>
+              <div class="pj-tags">
+                <span>Restaurant</span>
+                <span>Landing Page</span>
+              </div>
+            </div>
+            <h3 class="pj-title">Jonkira Ramen</h3>
+            <p class="pj-desc">Website resto ramen dengan vibe Jepang autentik. Bold typography, full menu & lokasi.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="pj" data-index="06">
+        <a href="https://hantugur.github.io/sds/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/sds/" loading="lazy" title="SDS" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">06</span>
+              <div class="pj-tags">
+                <span>Business</span>
+                <span>Landing Page</span>
+              </div>
+            </div>
+            <h3 class="pj-title">SDS</h3>
+            <p class="pj-desc">Landing page bisnis profesional dengan tampilan corporate yang bersih dan terpercaya.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 7 -->
+      <article class="pj" data-index="07">
+        <a href="https://hantugur.github.io/62--coffe-shop/" target="_blank" class="pj-link">
+          <div class="pj-thumb">
+            <iframe src="https://hantugur.github.io/62--coffe-shop/" loading="lazy" title="62 Coffee Shop" scrolling="no"></iframe>
+            <div class="pj-overlay">
+              <span class="pj-visit">Lihat Website ↗</span>
+            </div>
+          </div>
+          <div class="pj-info">
+            <div class="pj-top">
+              <span class="pj-num mono">07</span>
+              <div class="pj-tags">
+                <span>Cafe</span>
+                <span>Landing Page</span>
+              </div>
+            </div>
+            <h3 class="pj-title">62 Coffee Shop</h3>
+            <p class="pj-desc">Website coffee shop dengan nuansa lokal Indonesia yang kuat. Warm, inviting, full featured.</p>
+            <div class="pj-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="svc-inner">
+      <div class="svc-header">
+        <p class="section-num mono">04 /</p>
+        <h2 class="section-h2">What I <em>Build</em></h2>
+      </div>
+      <div class="svc-grid">
+        <div class="sv rev">
+          <div class="sv-num mono">01</div>
+          <h4>Landing Page</h4>
+          <p>Single page yang fokus konversi. Desain premium, loading cepat, dan CTA yang efektif untuk bisnis kamu.</p>
+        </div>
+        <div class="sv rev" style="transition-delay:.07s">
+          <div class="sv-num mono">02</div>
+          <h4>Company Profile</h4>
+          <p>Website multi-section yang menampilkan brand, produk/jasa, dan informasi bisnis secara lengkap dan profesional.</p>
+        </div>
+        <div class="sv rev" style="transition-delay:.14s">
+          <div class="sv-num mono">03</div>
+          <h4>Menu Digital</h4>
+          <p>Website dengan interactive menu untuk cafe, resto, atau bakery — mobile-friendly dan mudah di-update.</p>
+        </div>
+        <div class="sv rev" style="transition-delay:.21s">
+          <div class="sv-num mono">04</div>
+          <h4>Personal Branding</h4>
+          <p>Portfolio & personal site yang nunjukin siapa kamu dan apa yang bisa kamu tawarkan ke dunia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-top">
+        <p class="section-num mono">05 /</p>
+        <h2 class="contact-h2">Punya project<br/><em>yang menarik?</em></h2>
+        <p class="contact-sub">Ceritain dulu — gue siap bantu bikin website yang sesuai brand dan tujuan bisnis kamu.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="ct-card rev">
+          <div class="ct-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </div>
+          <div class="ct-label">WhatsApp</div>
+          <div class="ct-val">082113478296</div>
+          <a href="https://wa.me/6282113478296?text=Halo!%20Saya%20mau%20tanya%20soal%20pembuatan%20website." target="_blank" class="ct-btn">Mulai Chat →</a>
+        </div>
+        <div class="ct-card rev" style="transition-delay:.08s">
+          <div class="ct-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div class="ct-label">Instagram</div>
+          <div class="ct-val">@cincau_item1</div>
+          <a href="https://instagram.com/cincau_item1" target="_blank" class="ct-btn">Follow →</a>
+        </div>
+        <div class="ct-card ct-card-big rev" style="transition-delay:.16s">
+          <p class="ct-big-text">"Gue percaya setiap bisnis lokal Indonesia layak punya website yang bagus — bukan template asal jadi, tapi sesuatu yang benar-benar ngerefleksiin brand mereka."</p>
+          <div class="ct-sig">— @cincau_item1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-inner">
+      <div class="foot-left">
+        <div class="foot-name">cincau_item1</div>
+        <p>Web Designer & Developer<br/>untuk bisnis lokal Indonesia.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="foot-social">
+        <a href="https://instagram.com/cincau_item1" target="_blank">Instagram ↗</a>
+        <a href="https://wa.me/6282113478296" target="_blank">WhatsApp ↗</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="mono">© 2026 cincau_item1. Built with ♥ & caffeine.</span>
+      <span class="mono">HTML · CSS · JS</span>
+    </div>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a id="wafloat" href="https://wa.me/6282113478296?text=Halo!%20Saya%20lihat%20portfolio%20kamu%20dan%20tertarik%20untuk%20diskusi%20project%20web." target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span>Hire Me</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
