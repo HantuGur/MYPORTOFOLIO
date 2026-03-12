@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
-[hantugur.github.io/portfolio](https://hantugur.github.io/portfolio) *(update sesuai link deploy kamu)*
+[hantugur.github.io/portfolio](https://hantugur.github.io/MYPORTOFOLIO/) *(update sesuai link deploy kamu)*
 
 ---
 
